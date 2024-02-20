@@ -1,4 +1,3 @@
-import React from "react";
 import { DisplayDotsProvider, DisplayDotsAnime } from "display-dots-anime";
 import Link from "next/link";
 

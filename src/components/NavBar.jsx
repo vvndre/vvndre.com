@@ -1,3 +1,4 @@
+"use client";
 import HomeLogo from "./HomeLogo";
 import Link from "next/link";
 import { PiDotsNineBold } from "react-icons/pi";
@@ -17,13 +18,19 @@ function NavBar() {
         <div className="hidden sm:flex">
           <ul className="hidden sm:flex">
             <Link href="/">
-              <li className="ml-10 text xl hover:font-bold">Home</li>
+              <li className="ml-10 text xl hover:font-bold flex-shrink-0 w-[50px]">
+                [Home]
+              </li>
             </Link>
             <Link href="/About">
-              <li className="ml-10 text xl hover:font-bold">About</li>
+              <li className="ml-10 text xl hover:font-bold flex-shrink-0 w-[50px]">
+                [About]
+              </li>
             </Link>
             <Link href="/Work">
-              <li className="ml-10 text xl hover:font-bold">Work</li>
+              <li className="ml-10 text xl hover:font-bold flex-shrink-0 w-[50px]">
+                [Work]
+              </li>
             </Link>
           </ul>
         </div>
@@ -34,8 +41,8 @@ function NavBar() {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gluon-gray p-10 ease-in duration-480"
-            : "fixed left-[-100%] top-0 p-10 ease-in duration-480"
+            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gluon-gray p-10 ease-in duration-500"
+            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
         }
       >
         <div className="flex w-full items-center justify-end">
