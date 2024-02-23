@@ -1,5 +1,5 @@
 "use client";
-import HomeLogo from "./HomeLogo";
+import HomeLogo from "../HomeLogo";
 import Link from "next/link";
 import { PiDotsNineBold } from "react-icons/pi";
 import { useState } from "react";
@@ -12,7 +12,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="fixed w-full h-24 border-b border-solid border-snow-white bg-dark-void">
+    <nav className="sticky w-full h-24 border-b border-solid border-snow-white bg-dark-void">
       <div className="flex flex-row justify-between items-center h-full w-full px-4 2xl:px-12">
         <HomeLogo />
         <div className="hidden sm:flex">
@@ -22,12 +22,12 @@ function NavBar() {
                 [Home]
               </li>
             </Link>
-            <Link href="/About">
+            <Link href="/about">
               <li className="ml-10 text xl hover:font-bold flex-shrink-0 w-[50px]">
                 [About]
               </li>
             </Link>
-            <Link href="/Work">
+            <Link href="/work">
               <li className="ml-10 text xl hover:font-bold flex-shrink-0 w-[50px]">
                 [Work]
               </li>
@@ -59,23 +59,23 @@ function NavBar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-6 cursor-cell"
+                className="py-6 cursor-cell hover:font-bold"
               >
                 Home
               </li>
             </Link>
-            <Link href="/About">
+            <Link href="/about">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-6 cursor-cell"
+                className="py-6 cursor-cell hover:font-bold"
               >
                 About
               </li>
             </Link>
-            <Link href="/Work">
+            <Link href="/work">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-6 cursor-cell"
+                className="py-6 cursor-cell hover:font-bold"
               >
                 Work
               </li>
