@@ -21,7 +21,7 @@ body {
   background: #151419;
   cursor: crosshair;
   color: #fbfbfb;
-
+  line-height: 1.5;
   a {
     cursor: cell;
   }
