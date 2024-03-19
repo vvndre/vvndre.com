@@ -12,7 +12,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="sticky w-full h-24 border-b border-solid border-snow-white bg-dark-void">
+    <nav className="sticky w-full h-24 border-b border-solid border-snow-white bg-dark-void z-50">
       <div className="flex flex-row justify-between items-center h-full w-full px-4 2xl:px-12">
         <HomeLogo />
         <div className="hidden sm:flex">
@@ -41,8 +41,8 @@ function NavBar() {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gluon-gray p-10 ease-in duration-500"
-            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gluon-gray p-10 ease-in duration-500 z-50"
+            : "fixed left-[-100%] top-0 p-10 ease-in duration-500 z-50"
         }
       >
         <div className="flex w-full items-center justify-end">
@@ -54,7 +54,7 @@ function NavBar() {
             </DisplayDotsProvider>
           </div>
         </div>
-        <div className="flex-col py-4">
+        <div className="flex-col py-4 z-50">
           <ul>
             <Link href="/">
               <li
