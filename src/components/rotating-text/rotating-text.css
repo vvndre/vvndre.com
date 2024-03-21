@@ -1,0 +1,26 @@
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotating 18s linear infinite;
+}
+
+.rounded-text {
+  text-transform: uppercase;
+  transform: rotate(-103deg);
+  fill: #fbfbfb;
+  font-weight: bold;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .rounded-text {
+    
+  }
+}

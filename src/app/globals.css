@@ -22,6 +22,7 @@ body {
   cursor: crosshair;
   color: #fbfbfb;
   line-height: 1.5;
+  overflow-x: hidden;
   a {
     cursor: cell;
   }
