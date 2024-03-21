@@ -32,3 +32,13 @@ body {
     text-wrap: balance;
   }
 }
+
+::-moz-selection {
+  background: #f56e0f;
+}
+::-webkit-selection {
+  background: #f56e0f;
+}
+::selection {
+  background: #f56e0f;
+}

@@ -2,11 +2,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import apdfmock from "/public/images/websites/MacBook Pro Mockups.png";
+import apdfmock from "/public/images/websites/apdf-mockup.png";
 import apdf from "/public/images/websites/archivePDF.png";
 import gamejot from "/public/images/websites/Gamejot.jpeg";
 import actionhosesupply from "/public/images/websites/actionhosesupply.png";
 import barbershop from "/public/images/websites/Hair Salon.jpeg";
+import actionretals from "/public/images/websites/action-rentals.png";
 
 export default function Work() {
   const [isSmallViewport, setIsSmallViewport] = useState(false);
@@ -115,7 +116,20 @@ export default function Work() {
             />
           </Link>
         </div>
-        <div className="bg-slate-gray h-[45vh] rounded-md"></div>
+        <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden">
+          <Link
+            href="https://www.actionrentalstx.com/"
+            className="block h-full w-full relative"
+          >
+            <Image
+              src={actionretals}
+              alt="Action Rental Website"
+              layout="fill"
+              objectFit="cover"
+              className="transition-all duration-300 ease-out-in transform group-hover:scale-110 group-hover:blur-sm"
+            />
+          </Link>
+        </div>
       </div>
     </div>
   );
