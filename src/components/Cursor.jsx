@@ -44,6 +44,7 @@ export default function BlurryCursor({ isActive }) {
       window.removeEventListener("mousemove", manageMouseMove);
       window.cancelAnimationFrame(rafId.current);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive]);
 
   return (
