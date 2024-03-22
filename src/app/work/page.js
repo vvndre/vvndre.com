@@ -8,9 +8,11 @@ import gamejot from "/public/images/websites/Gamejot.jpeg";
 import actionhosesupply from "/public/images/websites/actionhosesupply.png";
 import barbershop from "/public/images/websites/Hair Salon.jpeg";
 import actionretals from "/public/images/websites/action-rentals.png";
+import Cursor from "@/components/Cursor";
 
 export default function Work() {
   const [isSmallViewport, setIsSmallViewport] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -26,7 +28,15 @@ export default function Work() {
 
   return (
     <div className="flex min-h-screen mx-8 flex-col px-6 bg-dark-void">
-      <div className="py-8 container-xl text-center">
+      <div
+        className="py-8 container-xl text-center z-10"
+        onMouseOver={() => {
+          setIsActive(true);
+        }}
+        onMouseLeave={() => {
+          setIsActive(false);
+        }}
+      >
         <p className="text-dusty-gray mb-6">Work</p>
         <h2 className="text-6xl mb-8">
           A small selection <br /> of recent projects
@@ -34,11 +44,25 @@ export default function Work() {
       </div>
 
       <div
-        className={`container-xl pb-8 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4 ${
+        className={`container-xl pb-8 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4 z-10 ${
           isSmallViewport ? "hidden" : "block"
         }`}
+        onMouseOver={() => {
+          setIsActive(true);
+        }}
+        onMouseLeave={() => {
+          setIsActive(false);
+        }}
       >
-        <div className="group md:col-span-2 bg-slate-gray rounded-md relative h-[80vh] overflow-hidden">
+        <div
+          className="group md:col-span-2 bg-slate-gray rounded-md relative h-[80vh] overflow-hidden"
+          onMouseOver={() => {
+            setIsActive(true);
+          }}
+          onMouseLeave={() => {
+            setIsActive(false);
+          }}
+        >
           <Link
             href="https://beta.archivepdf.net/"
             className="block h-full w-full relative"
@@ -54,9 +78,15 @@ export default function Work() {
         </div>
       </div>
       <div
-        className={`container-l pb-8 grid grid-cols-1 gap-x-4 gap-y-4 ${
+        className={`container-l pb-8 grid grid-cols-1 gap-x-4 gap-y-4 z-10 ${
           isSmallViewport ? "grid-rows-5" : "sm:grid-cols-2"
         }`}
+        onMouseOver={() => {
+          setIsActive(true);
+        }}
+        onMouseLeave={() => {
+          setIsActive(false);
+        }}
       >
         {isSmallViewport && (
           <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden">
@@ -131,6 +161,7 @@ export default function Work() {
           </Link>
         </div>
       </div>
+      <Cursor isActive={isActive} />
     </div>
   );
 }

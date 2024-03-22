@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-dark-void border-t border-snow-white sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 antialiased">
+    <footer className="sticky bg-dark-void border-t border-snow-white sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 antialiased">
       <p className="mb-4 text-sm text-center sm:mb-0">
         &copy; 2022-2024{" "}
         <a
