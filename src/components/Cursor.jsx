@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-export default function BlurryCursor({ isActive }) {
+export default function Cursor({ isActive }) {
   const mouse = useRef({ x: 0, y: 0 });
   const delayedMouse = useRef({ x: 0, y: 0 });
   const rafId = useRef(null);
@@ -44,7 +44,7 @@ export default function BlurryCursor({ isActive }) {
       window.removeEventListener("mousemove", manageMouseMove);
       window.cancelAnimationFrame(rafId.current);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive]);
 
   return (
