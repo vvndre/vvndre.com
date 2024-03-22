@@ -13,24 +13,18 @@ function NavBar() {
 
   return (
     <nav className="sticky w-full h-24 border-b border-solid border-snow-white bg-dark-void z-50">
-      <div className="flex flex-row justify-between items-center h-full w-full px-4 2xl:px-12">
+      <div className="flex flex-row justify-between items-center h-full w-full px-10 2xl:px-12">
         <HomeLogo />
         <div className="hidden sm:flex">
           <ul className="hidden sm:flex">
             <Link href="/">
-              <li className="ml-10 text xl hover:font-bold flex-shrink-0 w-[50px]">
-                [Home]
-              </li>
-            </Link>
-            <Link href="/about">
-              <li className="ml-10 text xl hover:font-bold flex-shrink-0 w-[50px]">
-                [About]
-              </li>
+              <li className="ml-10 hover:font-bold flex-shrink-0">[Home]</li>
             </Link>
             <Link href="/work">
-              <li className="ml-10 text xl hover:font-bold flex-shrink-0 w-[50px]">
-                [Work]
-              </li>
+              <li className="ml-10 hover:font-bold flex-shrink-0">[Work]</li>
+            </Link>
+            <Link href="/contact">
+              <li className="ml-10 hover:font-bold flex-shrink-0">[Contact]</li>
             </Link>
           </ul>
         </div>
@@ -59,25 +53,25 @@ function NavBar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-6 cursor-cell hover:font-bold"
+                className="py-6 text-lg cursor-cell hover:font-bold"
               >
                 Home
-              </li>
-            </Link>
-            <Link href="/about">
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="py-6 cursor-cell hover:font-bold"
-              >
-                About
               </li>
             </Link>
             <Link href="/work">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-6 cursor-cell hover:font-bold"
+                className="py-6 text-lg cursor-cell hover:font-bold"
               >
                 Work
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="py-6 text-lg cursor-cell hover:font-bold"
+              >
+                Contact
               </li>
             </Link>
           </ul>
