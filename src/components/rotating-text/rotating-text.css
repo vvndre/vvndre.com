@@ -17,6 +17,7 @@
   fill: #fbfbfb;
   font-weight: bold;
   position: absolute;
+  text-shadow: 2px 2px 4px #f56e0f;
 }
 
 @media (max-width: 768px) {
