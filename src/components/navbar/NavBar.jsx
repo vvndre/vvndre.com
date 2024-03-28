@@ -53,7 +53,7 @@ function NavBar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-6 text-lg cursor-cell hover:font-bold"
+                className="my-6 text-lg cursor-cell hover:font-bold"
               >
                 Home
               </li>
@@ -61,7 +61,7 @@ function NavBar() {
             <Link href="/work">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-6 text-lg cursor-cell hover:font-bold"
+                className="my-6 text-lg cursor-cell hover:font-bold"
               >
                 Work
               </li>
@@ -69,7 +69,7 @@ function NavBar() {
             <Link href="/contact">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="py-6 text-lg cursor-cell hover:font-bold"
+                className="my-6 text-lg cursor-cell hover:font-bold"
               >
                 Contact
               </li>
