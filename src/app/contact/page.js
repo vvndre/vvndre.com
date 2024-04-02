@@ -17,7 +17,7 @@ export default function Contact() {
         }}
       >
         <p className="text-dusty-gray mb-6">Contact</p>
-        <h2 className="text-5xl mb-8">Let's Connect.</h2>
+        <h2 className="text-5xl mb-8">Let’s Connect.</h2>
       </div>
       <Cursor isActive={isActive} />
     </div>
