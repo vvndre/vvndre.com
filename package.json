@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "devicon": "^2.16.0",
-    "display-dots-anime": "^0.1.4",
     "framer-motion": "^11.0.8",
     "gsap": "^3.12.5",
     "next": "14.1.0",

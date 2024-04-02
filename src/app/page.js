@@ -27,6 +27,7 @@ export default function Home() {
           height={700}
           alt="Picture of the author"
           quality={100}
+          priority={false}
           className="rounded-full"
         />
         <RotatingText />

@@ -3,7 +3,7 @@ import HomeLogo from "../HomeLogo";
 import Link from "next/link";
 import { PiDotsNineBold } from "react-icons/pi";
 import { useState } from "react";
-import { DisplayDotsProvider, DisplayDotsAnime } from "display-dots-anime";
+import { GiCancel } from "react-icons/gi";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,11 +41,7 @@ function NavBar() {
       >
         <div className="flex w-full items-center justify-end">
           <div onClick={handleNav} className="cursor-cell">
-            <DisplayDotsProvider>
-              <div size={25}>
-                <DisplayDotsAnime text="x" />
-              </div>
-            </DisplayDotsProvider>
+            <GiCancel size={30} className="cursor-cell" />
           </div>
         </div>
         <div className="flex-col py-4 z-50">

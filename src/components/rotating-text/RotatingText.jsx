@@ -1,4 +1,3 @@
-import React from "react";
 import "./rotating-text.css";
 
 const RotatingText = () => {
@@ -10,10 +9,12 @@ const RotatingText = () => {
           d="M 85,0 A 85,85 0 0 1 -85,0 A 85,85 0 0 1 85,0"
           transform="translate(100,100)"
           fill="none"
+          fillRule="none"
+          clipRule="none"
         ></path>
         <g fontSize="18.5px">
           <text textAnchor="start">
-            <textPath href="#textPath" startOffset="0%">
+            <textPath xlinkHref="#textPath" startOffset="0%">
               - Andre Castillon - Web Developer - UX/UI Designer
             </textPath>
           </text>

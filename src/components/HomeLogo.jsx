@@ -1,14 +1,18 @@
-import { DisplayDotsProvider, DisplayDotsAnime } from "display-dots-anime";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "/public/images/logo.png";
 
 function HomeLogo() {
   return (
     <Link href="/">
-      <DisplayDotsProvider>
-        <div className="w-250 h-75 hover:cursor-cell">
-          <DisplayDotsAnime text="vvndre" />
-        </div>
-      </DisplayDotsProvider>
+      <Image
+        src={logo}
+        width={200}
+        height={80}
+        quality={100}
+        alt="Logo"
+        priority={true}
+      />
     </Link>
   );
 }
