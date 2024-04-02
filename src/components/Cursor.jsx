@@ -1,8 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 
 export default function Cursor({ isActive }) {
+  const [isMobileView, setIsMobileView] = useState(false);
   const mouse = useRef({ x: 0, y: 0 });
   const delayedMouse = useRef({ x: 0, y: 0 });
   const rafId = useRef(null);
@@ -38,6 +39,20 @@ export default function Cursor({ isActive }) {
   };
 
   useEffect(() => {
+    const checkMobileView = () => {
+      setIsMobileView(window.innerWidth < 768);
+    };
+
+    checkMobileView(); // Check on initial render
+    window.addEventListener("resize", checkMobileView);
+
+    return () => {
+      window.removeEventListener("resize", checkMobileView);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobileView) return;
     animate();
     window.addEventListener("mousemove", manageMouseMove);
     return () => {
@@ -45,7 +60,12 @@ export default function Cursor({ isActive }) {
       window.cancelAnimationFrame(rafId.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isActive]);
+  }, [isActive, isMobileView]);
+
+  if (isMobileView) {
+    // Early return null or some mobile-specific content if in mobile view
+    return null;
+  }
 
   return (
     <div>
