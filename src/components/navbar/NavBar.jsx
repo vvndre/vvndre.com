@@ -13,7 +13,7 @@ function NavBar() {
 
   return (
     <nav className="sticky w-full h-24 border-b border-solid border-snow-white bg-dark-void z-50">
-      <div className="flex flex-row justify-between items-center h-full w-full px-10 2xl:px-12">
+      <div className="flex flex-row justify-between items-center h-full w-full px-6 lg:px-12">
         <HomeLogo />
         <div className="hidden sm:flex">
           <ul className="hidden sm:flex">
@@ -28,7 +28,7 @@ function NavBar() {
             </Link>
           </ul>
         </div>
-        <div onClick={handleNav} className="sm:hidden pl-24">
+        <div onClick={handleNav} className="sm:hidden">
           <PiDotsNineBold size={35} className="cursor-cell" />
         </div>
       </div>
