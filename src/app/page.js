@@ -5,6 +5,7 @@ import RotatingText from "@/components/rotating-text/RotatingText";
 import Cursor from "@/components/Cursor";
 import { useState } from "react";
 import RippleButton from "@/components/ripple-button/RippleButton";
+import Contact from "@/components/contact/Contact";
 
 export default function Home() {
   const [isActive, setIsActive] = useState(false);
@@ -34,6 +35,10 @@ export default function Home() {
 
       <div className="z-10">
         <RippleButton />
+      </div>
+
+      <div className="z-10">
+        <Contact />
       </div>
 
       <Cursor isActive={isActive} />

@@ -1,0 +1,37 @@
+.link {
+  background-image: linear-gradient(
+    to right,
+    #f56e0f,
+    #f56e0f 50%,
+    #fbfbfb 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:before {
+  content: "";
+  background: #f56e0f;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-position: 0;
+}
+
+.link:hover::before {
+  width: 100%;
+}
