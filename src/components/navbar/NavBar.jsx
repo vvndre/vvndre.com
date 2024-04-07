@@ -23,8 +23,8 @@ function NavBar() {
             <Link href="/work">
               <li className="ml-10 hover:font-bold flex-shrink-0">[Work]</li>
             </Link>
-            <Link href="/contact">
-              <li className="ml-10 hover:font-bold flex-shrink-0">[Contact]</li>
+            <Link href="/about">
+              <li className="ml-10 hover:font-bold flex-shrink-0">[About]</li>
             </Link>
           </ul>
         </div>
@@ -62,12 +62,12 @@ function NavBar() {
                 Work
               </li>
             </Link>
-            <Link href="/contact">
+            <Link href="/about">
               <li
                 onClick={() => setMenuOpen(false)}
                 className="my-6 text-lg cursor-cell hover:font-bold"
               >
-                Contact
+                About
               </li>
             </Link>
           </ul>
