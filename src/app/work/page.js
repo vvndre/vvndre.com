@@ -30,7 +30,7 @@ export default function Work() {
     <div className="flex min-h-screen mx-8 flex-col px-6 bg-dark-void">
       <div className="py-8 text-center z-10">
         <p className="text-dusty-gray mb-4">Work</p>
-        <h6 className="text-6xl">
+        <h6 className="text-6xl max-lg:text-5xl max-sm:text-4xl">
           A small selection <br /> of recent projects
         </h6>
       </div>
