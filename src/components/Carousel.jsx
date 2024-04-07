@@ -28,7 +28,7 @@ export default function Carousel() {
     setCurrentIndex(slideIndex);
   };
   return (
-    <div className="max-w-[1200px] h-[700px] w-full pb-12 px-4 relative group z-10">
+    <div className="max-w-[1200px] h-[68vh] w-full pb-12 px-4 relative group z-10">
       <div className="w-full h-full rounded-2xl bg-center bg-cover duration-500 relative">
         <Image
           src={slides[currentIndex]}
@@ -51,7 +51,7 @@ export default function Carousel() {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
+            className="text-2xl"
           >
             <RxDotFilled />
           </div>

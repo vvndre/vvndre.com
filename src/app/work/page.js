@@ -28,23 +28,15 @@ export default function Work() {
 
   return (
     <div className="flex min-h-screen mx-8 flex-col px-6 bg-dark-void">
-      <div
-        className="py-8 text-center z-10"
-        onMouseOver={() => {
-          setIsActive(true);
-        }}
-        onMouseLeave={() => {
-          setIsActive(false);
-        }}
-      >
-        <p className="text-dusty-gray mb-6">Work</p>
-        <h6 className="text-6xl mb-8">
+      <div className="py-8 text-center z-10">
+        <p className="text-dusty-gray mb-4">Work</p>
+        <h6 className="text-6xl">
           A small selection <br /> of recent projects
         </h6>
       </div>
 
       <div
-        className={`pb-8 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4 z-10 ${
+        className={`pb-8 px-4 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4 z-10 ${
           isSmallViewport ? "hidden" : "block"
         }`}
         onMouseOver={() => {
@@ -54,7 +46,7 @@ export default function Work() {
           setIsActive(false);
         }}
       >
-        <div className="group md:col-span-2 rounded-md relative h-[80vh] overflow-hidden">
+        <div className="group md:col-span-2 rounded-md relative w-full h-[65vh] overflow-hidden">
           <Link
             href="https://beta.archivepdf.net/"
             className="block h-full w-full relative z-10"
@@ -121,7 +113,7 @@ export default function Work() {
         </div>
       </div>
       <div
-        className={`pb-8 grid grid-cols-1 gap-x-4 gap-y-4 z-10 ${
+        className={`pb-8 px-4 grid grid-cols-1 gap-x-4 gap-y-4 z-10 ${
           isSmallViewport ? "grid-rows-5" : "sm:grid-cols-2"
         }`}
         onMouseOver={() => {
