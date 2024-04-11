@@ -11,7 +11,7 @@ export default function Home() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <main className="flex min-h-screen mx-8 px-6 items-center flex-col bg-dark-void">
+    <main className="flex min-h-screen mx-auto px-6 items-center flex-col bg-dark-void">
       <div
         onMouseOver={() => {
           setIsActive(true);
