@@ -42,6 +42,7 @@ export default function Carousel() {
           src={slides[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
           layout="fill"
+          quality={100}
           objectFit="cover"
           className="rounded-2xl"
         />
