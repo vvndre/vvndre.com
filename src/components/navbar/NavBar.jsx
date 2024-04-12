@@ -29,19 +29,25 @@ function NavBar() {
           </ul>
         </div>
         <div onClick={handleNav} className="sm:hidden">
-          <PiDotsNineBold size={35} className="cursor-cell" />
+          <PiDotsNineBold
+            size={35}
+            className="cursor-cell duration-500 hover:text-liquid-lava"
+          />
         </div>
       </div>
       <div
         className={
           menuOpen
             ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gluon-gray p-10 ease-in duration-500 z-50"
-            : "fixed left-[-100%] top-0 p-10 ease-in duration-500 z-50"
+            : "fixed left-[-100%] top-0 p-10 ease-out duration-500 z-50"
         }
       >
         <div className="flex w-full items-center justify-end">
           <div onClick={handleNav} className="cursor-cell">
-            <GiCancel size={30} className="cursor-cell" />
+            <GiCancel
+              size={30}
+              className="cursor-cell duration-500 hover:text-liquid-lava"
+            />
           </div>
         </div>
         <div className="flex-col py-4 z-50">
