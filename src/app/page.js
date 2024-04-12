@@ -19,7 +19,7 @@ export default function Home() {
         onMouseLeave={() => {
           setIsActive(false);
         }}
-        className="mt-14 mb-12 relative z-10"
+        className="mt-14 mb-10 relative z-10"
       >
         <Image
           src={portrait}

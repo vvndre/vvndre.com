@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import "./rotating-text.css";
 import Head from "next/head";
 
@@ -19,7 +19,7 @@ const RotatingText = () => {
           <g fontSize="18.5px">
             <text textAnchor="start">
               <textPath href="#textPath" startOffset="0%">
-                - Andre Castillon - Web Developer - UX/UI Designer
+                - Andre Castillon - Web Developer - UX / UI Designer
               </textPath>
             </text>
           </g>
