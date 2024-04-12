@@ -56,25 +56,25 @@ function NavBar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-12 cursor-cell link"
+                className="my-14 cursor-cell link"
               >
-                Home
+                [ Home ]
               </li>
             </Link>
             <Link href="/work">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-12 cursor-cell link"
+                className="my-14 cursor-cell link"
               >
-                Work
+                [ Work ]
               </li>
             </Link>
             <Link href="/about">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-12 cursor-cell link"
+                className="my-14 cursor-cell link"
               >
-                About
+                [ About ]
               </li>
             </Link>
           </ul>
