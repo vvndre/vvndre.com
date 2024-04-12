@@ -12,7 +12,7 @@ const RippleButton = () => {
         <span></span>
       </span>
       <span className="btn-title">
-        <span dataText="Resume">Resume</span>
+        <span data-text="Resume">Resume</span>
       </span>
     </Link>
   );
