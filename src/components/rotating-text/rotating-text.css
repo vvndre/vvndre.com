@@ -13,14 +13,19 @@
 
 .rounded-text {
   text-transform: uppercase;
-  transform: rotate(-103deg);
+  transform: rotate(-90deg);
   fill: #fbfbfb;
   font-weight: bold;
   position: absolute;
   text-shadow: 2px 2px 4px #151419;
 }
 
-@media (width: 768px) {
+@media (max-width: 768px) {
+  .rotating {
+    animation-duration: 36s; /* Slower rotation on smaller screens */
+  }
   .rounded-text {
+    transform: rotate(-45deg); /* Further adjust rotation for mobile */
+    text-shadow: 1px 1px 3px #151419; /* Adjusted shadow for better contrast */
   }
 }
