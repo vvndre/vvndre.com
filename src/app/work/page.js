@@ -187,6 +187,7 @@ export default function Work() {
             </div>
           </div>
         )}
+
         <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden relative">
           <Link
             href="https://gamejot-front-end.onrender.com/"
@@ -269,14 +270,15 @@ export default function Work() {
             </div>
           </div>
         </div>
+
         <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden relative">
           <Link
-            href="https://www.actionhosesupply.com/"
+            href="https://www.actionrentalstx.com/"
             className="block h-full w-full relative"
           >
             <Image
-              src={actionhosesupply}
-              alt="Action Hose & Fittings Website"
+              src={actionretals}
+              alt="Action Rental Website"
               layout="fill"
               objectFit="cover"
               className="transition-all duration-300 ease-out-in transform group-hover:scale-110 group-hover:blur-sm"
@@ -284,8 +286,8 @@ export default function Work() {
           </Link>
           <div className="bg-opacity-75 bg-black text-snow-white absolute bottom-0 left-0 right-0 p-4">
             <p className="text-center">
-              <strong className="font-oswald">Action Hose & Fittings</strong>
-              <br /> Managed online store using ecommerce backend systems.
+              <strong className="font-oswald">Action Rentals</strong>
+              <br /> Managing and Maintaining Local Business Website
             </p>
             <div className="flex mt-2 justify-center justify-items-center gap-4">
               <svg
@@ -407,6 +409,7 @@ export default function Work() {
             </div>
           </div>
         </div>
+
         <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden relative">
           <Link
             href="https://vvndre.github.io/hairSalonWebsite/"
@@ -492,14 +495,15 @@ export default function Work() {
             </div>
           </div>
         </div>
+
         <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden relative">
           <Link
-            href="https://www.actionrentalstx.com/"
+            href="https://www.actionhosesupply.com/"
             className="block h-full w-full relative"
           >
             <Image
-              src={actionretals}
-              alt="Action Rental Website"
+              src={actionhosesupply}
+              alt="Action Hose & Fittings Website"
               layout="fill"
               objectFit="cover"
               className="transition-all duration-300 ease-out-in transform group-hover:scale-110 group-hover:blur-sm"
@@ -507,8 +511,8 @@ export default function Work() {
           </Link>
           <div className="bg-opacity-75 bg-black text-snow-white absolute bottom-0 left-0 right-0 p-4">
             <p className="text-center">
-              <strong className="font-oswald">Action Rentals</strong>
-              <br /> Managing and Maintaining Local Business Website
+              <strong className="font-oswald">Action Hose & Fittings</strong>
+              <br /> Managed online store using ecommerce backend systems.
             </p>
             <div className="flex mt-2 justify-center justify-items-center gap-4">
               <svg
