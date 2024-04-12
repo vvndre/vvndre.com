@@ -2,8 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navbar/NavBar";
 import Footer from "@/components/footer/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { dots, oswald, lora } from "./utils/fonts";
 
 export const metadata = {
   title: "vvndre",
@@ -13,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${dots.variable} ${oswald.variable} ${lora.variable}`}>
         <NavBar />
         {children}
         <Footer />

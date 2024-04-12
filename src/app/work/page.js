@@ -29,7 +29,7 @@ export default function Work() {
   return (
     <div className="flex min-h-screen mx-auto flex-col px-6 bg-dark-void">
       <div className="py-8 text-center z-10">
-        <p className="text-dusty-gray mb-4">Work</p>
+        <p className="text-dusty-gray mb-4 text-xl font-dots">Work</p>
         <h6 className="text-6xl max-lg:text-5xl max-sm:text-4xl">
           A small selection <br /> of recent projects
         </h6>
@@ -61,11 +61,11 @@ export default function Work() {
           </Link>
           <div className="opacity-0 group-hover:opacity-100 absolute inset-0 flex justify-center items-center text-snow-white bg-gluon-gray bg-opacity-50">
             <div className="text-center z-20 relative">
-              <p className="text-3xl mb-2">
+              <h6 className="text-3xl mb-2">
                 <strong>ARCHIVE.pdf</strong>
                 <br /> Archive Fashion Scans,
                 <br /> Articles & Content for the World.
-              </p>
+              </h6>
               <div className="flex mt-2 justify-center justify-items-center gap-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ export default function Work() {
             </Link>
             <div className="bg-opacity-75 bg-black text-snow-white absolute bottom-0 left-0 right-0 p-4">
               <p className="text-center">
-                <strong>ARCHIVE.pdf</strong>
+                <strong className="font-oswald">ARCHIVE.pdf</strong>
                 <br /> Archive Fashion Scans, Articles & Content for the World.
               </p>
               <div className="flex mt-2 justify-center justify-items-center gap-4">
@@ -202,7 +202,7 @@ export default function Work() {
           </Link>
           <div className="bg-opacity-75 bg-black text-snow-white absolute bottom-0 left-0 right-0 p-4">
             <p className="text-center">
-              <strong>Gamejot</strong>
+              <strong className="font-oswald">Gamejot</strong>
               <br /> The Ultimate Game Tracker Web App.
             </p>
             <div className="flex mt-2 justify-center justify-items-center gap-4">
@@ -284,7 +284,7 @@ export default function Work() {
           </Link>
           <div className="bg-opacity-75 bg-black text-snow-white absolute bottom-0 left-0 right-0 p-4">
             <p className="text-center">
-              <strong>Action Hose & Fittings</strong>
+              <strong className="font-oswald">Action Hose & Fittings</strong>
               <br /> Managed online store using ecommerce backend systems.
             </p>
             <div className="flex mt-2 justify-center justify-items-center gap-4">
@@ -422,7 +422,7 @@ export default function Work() {
           </Link>
           <div className="bg-opacity-75 bg-black text-snow-white absolute bottom-0 left-0 right-0 p-4">
             <p className="text-center">
-              <strong>Mustacchio</strong>
+              <strong className="font-oswald">Mustacchio</strong>
               <br /> Barbershop Mockup Website.
             </p>
             <div className="flex mt-2 justify-center justify-items-center gap-4">
@@ -507,7 +507,7 @@ export default function Work() {
           </Link>
           <div className="bg-opacity-75 bg-black text-snow-white absolute bottom-0 left-0 right-0 p-4">
             <p className="text-center">
-              <strong>Action Rentals</strong>
+              <strong className="font-oswald">Action Rentals</strong>
               <br /> Managing and Maintaining Local Business Website
             </p>
             <div className="flex mt-2 justify-center justify-items-center gap-4">

@@ -26,6 +26,15 @@ body {
   a {
     cursor: cell;
   }
+  ,
+  p {
+    @apply font-lora;
+  }
+  ,
+  h6,
+  span {
+    @apply font-oswald;
+  }
 }
 
 @layer utilities {

@@ -2,10 +2,12 @@ import "./contact.css";
 
 function Contact() {
   return (
-    <section>
+    <section className="font-oswald">
       <div className="container text-center px-6 py-12 mx-auto">
         <div>
-          <p className="font-medium text-2xl text-liquid-lava">Let’s Connect</p>
+          <p className="font-medium text-2xl text-liquid-lava font-oswald">
+            Let’s Connect
+          </p>
         </div>
 
         <div class="grid min-sm:grid-cols-1 gap-12 mt-10 md:grid-cols-3">

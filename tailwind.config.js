@@ -24,6 +24,11 @@ module.exports = {
         "gluon-gray": "#1b1b1e",
         "snow-white": "#fbfbfb",
       },
+      fontFamily: {
+        dots: ["var(--font-dots)"],
+        oswald: ["var(--font-oswald)"],
+        lora: ["var(--font-lora)"],
+      },
     },
   },
   plugins: [],

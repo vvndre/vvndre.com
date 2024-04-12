@@ -15,16 +15,16 @@ function NavBar() {
     <nav className="sticky w-full h-24 border-b border-solid border-snow-white bg-dark-void z-50">
       <div className="flex flex-row justify-between items-center h-full w-full px-6 lg:px-12">
         <HomeLogo />
-        <div className="hidden sm:flex">
+        <div className="font-dots text-3xl hidden sm:flex">
           <ul className="hidden sm:flex">
             <Link href="/">
-              <li className="ml-10 hover:font-bold flex-shrink-0">[Home]</li>
+              <li className="ml-10 hover:font-bold flex-shrink-0">[ Home ]</li>
             </Link>
             <Link href="/work">
-              <li className="ml-10 hover:font-bold flex-shrink-0">[Work]</li>
+              <li className="ml-10 hover:font-bold flex-shrink-0">[ Work ]</li>
             </Link>
             <Link href="/about">
-              <li className="ml-10 hover:font-bold flex-shrink-0">[About]</li>
+              <li className="ml-10 hover:font-bold flex-shrink-0">[ About ]</li>
             </Link>
           </ul>
         </div>
@@ -45,11 +45,11 @@ function NavBar() {
           </div>
         </div>
         <div className="flex-col py-4 z-50">
-          <ul>
+          <ul className="font-dots text-4xl">
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-6 text-lg cursor-cell hover:font-bold"
+                className="my-12 cursor-cell hover:font-bold"
               >
                 Home
               </li>
@@ -57,7 +57,7 @@ function NavBar() {
             <Link href="/work">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-6 text-lg cursor-cell hover:font-bold"
+                className="my-12 cursor-cell hover:font-bold"
               >
                 Work
               </li>
@@ -65,7 +65,7 @@ function NavBar() {
             <Link href="/about">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-6 text-lg cursor-cell hover:font-bold"
+                className="my-12 cursor-cell hover:font-bold"
               >
                 About
               </li>
