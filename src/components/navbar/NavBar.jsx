@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PiDotsNineBold } from "react-icons/pi";
 import { useState } from "react";
 import { GiCancel } from "react-icons/gi";
+import "./navbar.css"
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,13 +19,13 @@ function NavBar() {
         <div className="font-dots text-3xl hidden sm:flex">
           <ul className="hidden sm:flex">
             <Link href="/">
-              <li className="ml-10 hover:font-bold flex-shrink-0">[ Home ]</li>
+              <li className="ml-10 link ">[ Home ]</li>
             </Link>
             <Link href="/work">
-              <li className="ml-10 hover:font-bold flex-shrink-0">[ Work ]</li>
+              <li className="ml-10 link ">[ Work ]</li>
             </Link>
             <Link href="/about">
-              <li className="ml-10 hover:font-bold flex-shrink-0">[ About ]</li>
+              <li className="ml-10 link ">[ About ]</li>
             </Link>
           </ul>
         </div>
@@ -55,7 +56,7 @@ function NavBar() {
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-12 cursor-cell hover:font-bold"
+                className="my-12 cursor-cell link"
               >
                 Home
               </li>
@@ -63,7 +64,7 @@ function NavBar() {
             <Link href="/work">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-12 cursor-cell hover:font-bold"
+                className="my-12 cursor-cell link"
               >
                 Work
               </li>
@@ -71,7 +72,7 @@ function NavBar() {
             <Link href="/about">
               <li
                 onClick={() => setMenuOpen(false)}
-                className="my-12 cursor-cell hover:font-bold"
+                className="my-12 cursor-cell link"
               >
                 About
               </li>
