@@ -51,7 +51,7 @@ function NavBar() {
           </div>
         </div>
         <div className="flex-col py-4 z-50">
-          <ul className="font-dots text-4xl">
+          <ul className="font-dots text-5xl">
             <Link href="/">
               <li
                 onClick={() => setMenuOpen(false)}
