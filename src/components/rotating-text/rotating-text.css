@@ -20,7 +20,7 @@
   text-shadow: 2px 2px 4px #151419;
 }
 
-@media (max-width: 768px) {
+@media (width: 768px) {
   .rounded-text {
   }
 }
