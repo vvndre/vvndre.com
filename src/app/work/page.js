@@ -498,7 +498,7 @@ export default function Work() {
 
         <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden relative">
           <Link
-            href="https://www.actionhosesupply.com/"
+            href="https://drive.google.com/file/d/1noWs-YHdfaVOd3ezovZwFbwcu-LvTMpX/view?usp=sharing"
             className="block h-full w-full relative"
           >
             <Image
