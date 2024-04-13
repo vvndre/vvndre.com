@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Cursor from "@/components/Cursor";
 import Carousel from "@/components/Carousel";
+import Accordian from "@/components/Accordian";
 
 export default function About() {
   const [isActive, setIsActive] = useState(false);
@@ -37,6 +38,9 @@ export default function About() {
           with a strong focus on creating user-friendly applications that bridge
           the gap between code and design.
         </p>
+
+        <Accordian />
+
         <p className="mb-6 text-lg">
           I’ve worked in UI design and front-end development, so I can
           understand designs well and builds effective communication between
