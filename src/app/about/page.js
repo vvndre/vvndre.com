@@ -30,25 +30,28 @@ export default function About() {
 
       <section className="py-6 prose xl:prose-md max-w-3xl mx-auto text-center z-10">
         <p className="mb-6 text-lg">
-          👋 Hi — I’m Andre , a 25 y/o Creative Full Stack Developer based in
+          👋 Hi — I’m Andre, a 25 y/o Creative Full Stack Developer based in
           Houston, Texas.
         </p>
         <p className="mb-6 text-lg">
+          In my personal life, I love to travel, kayak, watch movies, and
+          discover new music!
+        </p>
+
+        <div className="my-10">
+          <p className="text-dusty-gray m-4 text-xl font-dots">Experience</p>
+          <Accordian />
+        </div>
+
+        <p className="my-6 text-lg">
           I develop accessible, responsive, interactive, and animated websites
           with a strong focus on creating user-friendly applications that bridge
           the gap between code and design.
         </p>
-
-        <Accordian />
-
         <p className="mb-6 text-lg">
           I’ve worked in UI design and front-end development, so I can
           understand designs well and builds effective communication between
           team members.
-        </p>
-        <p className="text-lg">
-          In my personal life, I love to travel, kayak, watch movies, and
-          discover new music!
         </p>
       </section>
 
