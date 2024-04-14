@@ -2,10 +2,10 @@ import { FaChevronCircleDown } from "react-icons/fa";
 
 function Accordian() {
   return (
-    <div className="my-2 space-y-2">
+    <div className="m-2 space-y-2">
       <div
         className="group flex flex-col gap-2 rounded-lg bg-slate-gray p-5"
-        tabIndex="1"
+        tabindex="1"
       >
         <div className="flex cursor-cell items-center justify-between ">
           <span className="hover:text-liquid-lava duration-500">
@@ -17,7 +17,7 @@ function Accordian() {
             className="transition-all duration-500 group-focus:-rotate-180"
           />
         </div>
-        <div className="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+        <div className="invisible h-auto max-h-0 opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
           <br />
           <h6>ARCHIVE.pdf - Remote</h6>
           <br />
@@ -44,9 +44,9 @@ function Accordian() {
 
       <div
         className="group flex flex-col gap-2 rounded-lg bg-slate-gray p-5 "
-        tabIndex="2"
+        tabindex="2"
       >
-        <div classname="flex cursor-cell items-center justify-between">
+        <div className="flex cursor-cell items-center justify-between ">
           <span className="hover:text-liquid-lava duration-500">
             {" "}
             <srong>Assistant Manager</srong> <em>(2017 - Present)</em>{" "}
@@ -56,7 +56,7 @@ function Accordian() {
             className="transition-all duration-500 group-focus:-rotate-180"
           />
         </div>
-        <div className="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+        <div className="invisible h-auto max-h-0 opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
           <br />
           <h6>Action Rentals - Waller, TX</h6>
           <br />
@@ -96,7 +96,7 @@ function Accordian() {
 
       <div
         className="group flex flex-col gap-2 rounded-lg bg-slate-gray p-5 "
-        tabIndex="3"
+        tabindex="3"
       >
         <div className="flex cursor-cell items-center justify-between">
           <span className="hover:text-liquid-lava duration-500">
