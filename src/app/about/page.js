@@ -49,7 +49,7 @@ export default function About() {
           the gap between code and design.
         </p>
         <p className="mb-6 text-lg">
-          I’ve worked in UI design and front-end development, so I can
+          I’ve worked in front-end and back-end development, so I can
           understand designs well and builds effective communication between
           team members.
         </p>
