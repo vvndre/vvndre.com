@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${dots.variable} ${oswald.variable} ${lora.variable}`}>
+        <link rel="icon" href="/images/icon.png" sizes="any" />
         <NavBar />
         {children}
         <Footer />
