@@ -1,25 +1,51 @@
 import { FaChevronCircleDown } from "react-icons/fa";
+import { useState } from "react";
 
 function Accordian() {
+  // State to track the visibility of each tab content
+  const [tabVisibility, setTabVisibility] = useState({});
+
+  // Function to toggle the visibility of a tab content
+  const toggleTabContent = (tabIndex) => {
+    setTabVisibility((prevState) => ({
+      ...prevState,
+      [tabIndex]: !prevState[tabIndex],
+    }));
+  };
+
   return (
     <div className="m-2 space-y-2">
+      {/* First Tab */}
       <div
         className="group flex flex-col gap-2 rounded-lg bg-slate-gray p-5"
-        tabindex="1"
+        tabIndex="1"
       >
-        <div className="flex cursor-cell items-center justify-between ">
+        <div
+          className="flex cursor-cell items-center justify-between "
+          onClick={() => toggleTabContent(1)}
+        >
           <span className="hover:text-liquid-lava duration-500">
             {" "}
-            <srong>Web Developer</srong> <em>(2023 - Present)</em>{" "}
+            <strong>Web Developer</strong> <em>(2023 - Present)</em>{" "}
           </span>
           <FaChevronCircleDown
             size={15}
-            className="transition-all duration-500 group-focus:-rotate-180"
+            className={`transition-all duration-500 ${
+              tabVisibility[1] ? "rotate-180" : ""
+            }`}
           />
         </div>
-        <div className="invisible h-auto max-h-0 opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+        <div
+          className={`${
+            tabVisibility[1]
+              ? "visible h-auto max-h-screen opacity-100 transition-all duration-1000"
+              : "invisible h-auto max-h-0 opacity-0 transition-all duration-500"
+          }`}
+        >
           <br />
-          <h6>ARCHIVE.pdf - Remote</h6>
+          <h6>
+            <strong>ARCHIVE.pdf</strong> - <em>Remote</em>
+          </h6>
           <br />
           <p className="text-left">
             - Completed numerous Trello tickets, demonstrating problem-solving
@@ -42,23 +68,37 @@ function Accordian() {
         </div>
       </div>
 
+      {/* Second Tab */}
       <div
         className="group flex flex-col gap-2 rounded-lg bg-slate-gray p-5 "
-        tabindex="2"
+        tabIndex="2"
       >
-        <div className="flex cursor-cell items-center justify-between ">
+        <div
+          className="flex cursor-cell items-center justify-between "
+          onClick={() => toggleTabContent(2)}
+        >
           <span className="hover:text-liquid-lava duration-500">
             {" "}
-            <srong>Assistant Manager</srong> <em>(2017 - Present)</em>{" "}
+            <strong>Assistant Manager</strong> <em>(2017 - Present)</em>{" "}
           </span>
           <FaChevronCircleDown
             size={15}
-            className="transition-all duration-500 group-focus:-rotate-180"
+            className={`transition-all duration-500 ${
+              tabVisibility[2] ? "rotate-180" : ""
+            }`}
           />
         </div>
-        <div className="invisible h-auto max-h-0 opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+        <div
+          className={`${
+            tabVisibility[2]
+              ? "visible h-auto max-h-screen opacity-100 transition-all duration-1000"
+              : "invisible h-auto max-h-0 opacity-0 transition-all duration-500"
+          }`}
+        >
           <br />
-          <h6>Action Rentals - Waller, TX</h6>
+          <h6>
+            <strong>Action Rentals</strong> - <em>Waller, TX</em>
+          </h6>
           <br />
           <p className="text-left">
             - Manage & maintain both{" "}
@@ -94,23 +134,37 @@ function Accordian() {
         </div>
       </div>
 
+      {/* Third Tab */}
       <div
         className="group flex flex-col gap-2 rounded-lg bg-slate-gray p-5 "
-        tabindex="3"
+        tabIndex="3"
       >
-        <div className="flex cursor-cell items-center justify-between">
+        <div
+          className="flex cursor-cell items-center justify-between "
+          onClick={() => toggleTabContent(3)}
+        >
           <span className="hover:text-liquid-lava duration-500">
             {" "}
-            <srong>Production Assistant</srong> <em>(2020 - 2021)</em>{" "}
+            <strong>Production Assistant</strong> <em>(2020 - 2021)</em>{" "}
           </span>
           <FaChevronCircleDown
             size={15}
-            className="transition-all duration-500 group-focus:-rotate-180"
+            className={`transition-all duration-500 ${
+              tabVisibility[3] ? "rotate-180" : ""
+            }`}
           />
         </div>
-        <div className="invisible h-auto max-h-0 opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+        <div
+          className={`${
+            tabVisibility[3]
+              ? "visible h-auto max-h-screen opacity-100 transition-all duration-1000"
+              : "invisible h-auto max-h-0 opacity-0 transition-all duration-500"
+          }`}
+        >
           <br />
-          <h6>Arena Theatre - Houston, TX</h6>
+          <h6>
+            <strong>Arena Theatre</strong> - <em>Houston, TX</em>
+          </h6>
           <br />
           <p className="text-left">
             - Setup audio production elements
