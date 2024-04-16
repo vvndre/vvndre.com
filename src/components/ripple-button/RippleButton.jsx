@@ -5,7 +5,7 @@ const RippleButton = () => {
   return (
     <Link
       className="btn"
-      href="https://docs.google.com/document/d/1PpIZ7fbM7tI9MQ2dBNV7pOYG7c_130oRaCLjBEO86LA/edit?usp=sharing"
+      href="https://docs.google.com/document/d/1b2YGncSmJcwiVYiBclZt-ppJSaNlKkIKeyzgQNfzcdc/edit?usp=sharing"
     >
       <span className="btn-border"></span>
       <span className="btn-ripple">
