@@ -52,7 +52,7 @@ function Accordian() {
             creating comprehensive design documentation. Managed ticket workflows, processing over 2,500 email entries.
             <br />
             <br />
-            - Modernized ARCHIVE.pdf's front-end using React and NextJS, reducing page load times by 70% and improved user
+            - Modernized ARCHIVE.pdf&apos;s front-end using React and NextJS, reducing page load times by 70% and improved user
             retention by 20%, leading to increased accessibility and engagement
             <br />
             <br />
