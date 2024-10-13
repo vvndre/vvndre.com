@@ -81,7 +81,7 @@ function Accordian() {
         >
           <span className="hover:text-liquid-lava duration-500">
             {" "}
-            <strong>Web Developer, Assistant Manager</strong> <em>(2017 - Present)</em>{" "}
+            <strong>Web Developer & Assistant Manager</strong> <em>(2017 - Present)</em>{" "}
           </span>
           <FaChevronCircleDown
             size={15}
