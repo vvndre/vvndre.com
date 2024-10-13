@@ -30,7 +30,7 @@ export default function About() {
 
       <section className="py-6 prose xl:prose-md max-w-3xl mx-auto text-center z-10">
         <p className="mb-6 text-lg">
-          👋 Hi — I’m Andre, a Houston-based tech wizard with a flair for full stack development.
+          👋 Hi — I&apos;m Andre, a Houston-based tech wizard with a flair for full stack development.
         </p>
         <p className="mb-6 text-lg">
           In my personal life, I love to travel, kayak, watch movies, and
