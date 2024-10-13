@@ -26,7 +26,7 @@ function Accordian() {
         >
           <span className="hover:text-liquid-lava duration-500">
             {" "}
-            <strong>Web Developer</strong> <em>(2023 - Present)</em>{" "}
+            <strong>Full Stack Developer</strong> <em>(2023 - Present)</em>{" "}
           </span>
           <FaChevronCircleDown
             size={15}
@@ -48,22 +48,24 @@ function Accordian() {
           </h6>
           <br />
           <p className="text-left">
-            - Completed numerous Trello tickets, demonstrating problem-solving
-            skills and the ability to work under deadlines.
+            - Led the development and integration of a newsletter feature using Strapi CMS and NextJS, designing components and
+            creating comprehensive design documentation. Managed ticket workflows, processing over 2,500 email entries.
             <br />
-            - Refactored and revised code to improve efficiency, readability,
-            and maintainability.
             <br />
-            - Utilized Git for version control, including creating branches and
-            merging them after careful review.
+            - Modernized ARCHIVE.pdf's front-end using React and NextJS, reducing page load times by 70% and improved user
+            retention by 20%, leading to increased accessibility and engagement
+            <br />
+            <br />
+            - Introduced TypeScript, leveraging generics and interfaces to enhance code reliability and maintainability, reducing
+            errors and improving team productivity.
+            <br />
             <br />
             - Participated in code QA reviews, ensuring the delivery of
             high-quality, error-free code.
             <br />
-            - Collaborated with a team of developers, enhancing teamwork,
-            communication, and project coordination skills.
-            <br />- Gained hands-on experience with TypeScript, improving
-            proficiency in statically typed languages.
+            <br />
+            - Collaborated with design and content teams to ensure smooth handoff and integration of new features, improving
+            overall project efficiency and alignment between departments.
           </p>
         </div>
       </div>
@@ -79,7 +81,7 @@ function Accordian() {
         >
           <span className="hover:text-liquid-lava duration-500">
             {" "}
-            <strong>Assistant Manager</strong> <em>(2017 - Present)</em>{" "}
+            <strong>Web Developer, Assistant Manager</strong> <em>(2017 - Present)</em>{" "}
           </span>
           <FaChevronCircleDown
             size={15}
@@ -117,19 +119,21 @@ function Accordian() {
             </a>{" "}
             websites via Wordpress
             <br />
-            - Opening, sorting, and routing incoming mail, answer correspondence
-            and prepare outgoing mail.
             <br />
-            - Coordinate or perform activities associated with shipping,
-            receiving, distribution, or transportation.
+            - Implemented user-focused design principles to enhance WordPress functionality, optimizing image loading
+            and streamlining navigation, which led to a 45% improvement in site load speed.
             <br />
-            - Maintain records pertaining to inventory, personnel, orders,
-            supplies, or machine maintenance.
             <br />
-            - Monitor inventory levels and requisition or purchase supplies as
-            needed.
-            <br />- Skilled relationship builder with the proven ability to work
-            with different personality styles.
+            - Directed the maintenance of the local business website, ensuring current content and optimal performance. Elevated
+            search engine rankings and increased website engagement metrics by 79% through strategic updates.
+            <br />
+            <br />
+            - Supervised the setup and maintenance of e-commerce platform, utilizing WooCommerce for seamless transactions,
+            resulting in a 15% increase in average order value and a decrease in customer service response time.
+            <br />
+            <br />
+            - Performed regular website audits to identify areas for improvement and ensure compliance with the latest
+            web standards
           </p>
         </div>
       </div>
@@ -167,19 +171,21 @@ function Accordian() {
           </h6>
           <br />
           <p className="text-left">
-            - Setup audio production elements
-            <br />
-            - Operated audio assets, including, but not limited to, lighting,
+            - Operated & Setup audio assets, including, but not limited to, lighting,
             sound, communication equipment, and backline band equipment
+            <br />
             <br />
             - Sets up and operated rotating stage operation for concerts and
             other events
             <br />
+            <br />
             - Shadow/Intern audio board operation during events, Assists in
             production staff for shows and events.
             <br />
+            <br />
             - Monitored condition of some equipment on stage during concert
             performances.
+            <br />
             <br />- Additional duties as assigned and collaborated with GM of
             Events & Production Sensitivity and understanding of diverse
             socioeconomic, cultural, disability, and ethnic backgrounds of venue
