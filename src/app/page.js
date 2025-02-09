@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import portrait from "/public/images/Portrait-BW.png";
+// import portrait from "/public/images/Portrait-BW.png";
+import headshot from "/public/images/headshot.png";
 import RotatingText from "@/components/rotating-text/RotatingText";
 import Cursor from "@/components/Cursor";
 import { useState } from "react";
@@ -22,7 +23,7 @@ export default function Home() {
         className="my-14 relative z-10"
       >
         <Image
-          src={portrait}
+          src={headshot}
           width={700}
           height={700}
           alt="Picture of the author"

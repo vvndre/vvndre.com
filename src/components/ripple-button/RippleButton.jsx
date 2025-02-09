@@ -4,6 +4,7 @@ import "./riple-button.css";
 const RippleButton = () => {
   return (
     <Link
+      target="_blank"
       className="btn"
       href="https://docs.google.com/document/d/1sJbuhwyyo0p2P4GNqTjXYrYzRpys7D9kP8Q988KVZmY/edit?usp=sharing"
     >

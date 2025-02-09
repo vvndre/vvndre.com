@@ -5,7 +5,7 @@ import Image from "next/image";
 import apdfmock from "/public/images/websites/apdf-mockup.png";
 import apdf from "/public/images/websites/archivePDF.png";
 import gamejot from "/public/images/websites/Gamejot.jpeg";
-import actionhosesupply from "/public/images/websites/actionhosesupply.png";
+import ecommerce from "/public/images/websites/ecommerce.jpg";
 import barbershop from "/public/images/websites/Hair Salon.jpeg";
 import actionretals from "/public/images/websites/action-rentals.png";
 import Cursor from "@/components/Cursor";
@@ -50,6 +50,7 @@ export default function Work() {
           <Link
             href="https://beta.archivepdf.net/"
             className="block h-full w-full relative z-10"
+            target="_blank"
           >
             <Image
               src={apdfmock}
@@ -128,6 +129,7 @@ export default function Work() {
             <Link
               href="https://beta.archivepdf.net/"
               className="block h-full w-full relative"
+              target="_blank"
             >
               <Image
                 src={apdf}
@@ -192,6 +194,7 @@ export default function Work() {
           <Link
             href="https://gamejot-front-end.onrender.com/"
             className="block h-full w-full relative"
+            target="_blank"
           >
             <Image
               src={gamejot}
@@ -275,6 +278,7 @@ export default function Work() {
           <Link
             href="https://www.actionrentalstx.com/"
             className="block h-full w-full relative"
+            target="_blank"
           >
             <Image
               src={actionretals}
@@ -414,6 +418,7 @@ export default function Work() {
           <Link
             href="https://vvndre.github.io/hairSalonWebsite/"
             className="block h-full w-full relative"
+            target="_blank"
           >
             <Image
               src={barbershop}
@@ -498,12 +503,13 @@ export default function Work() {
 
         <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden relative">
           <Link
-            href="https://drive.google.com/file/d/1noWs-YHdfaVOd3ezovZwFbwcu-LvTMpX/view?usp=sharing"
+            href="https://shorthaired-porkpie-f07.notion.site/Past-eCommerce-Projects-1951ef77d57e80f480d2f671dc93fce2?pvs=4"
             className="block h-full w-full relative"
+            target="_blank"
           >
             <Image
-              src={actionhosesupply}
-              alt="Action Hose & Fittings Website"
+              src={ecommerce}
+              alt="Past eCommerce Projects"
               layout="fill"
               objectFit="cover"
               className="transition-all duration-300 ease-out-in transform group-hover:scale-110 group-hover:blur-sm"
@@ -511,11 +517,11 @@ export default function Work() {
           </Link>
           <div className="bg-opacity-75 bg-black text-snow-white absolute bottom-0 left-0 right-0 p-4">
             <p className="text-center">
-              <strong className="font-oswald">Action Hose & Fittings</strong>
-              <br /> Managed online store using ecommerce backend systems.
+              <strong className="font-oswald">Past eCommerce Projects</strong>
+              <br /> Collection of online stores using ecommerce platforms.
             </p>
             <div className="flex mt-2 justify-center justify-items-center gap-4">
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 128 128"
                 className="w-5 h-5"
@@ -630,7 +636,7 @@ export default function Work() {
                   fill="#EBEBEB"
                   d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
                 />
-              </svg>
+              </svg> */}
             </div>
           </div>
         </div>
