@@ -33,7 +33,7 @@ export default function About() {
           👋 Hi — I&apos;m Andre, a Houston-based tech wizard with a flair for full stack development.
         </p>
         <p className="mb-6 text-lg">
-          In my personal life, I love to travel, kayak, watch movies, and
+          In my personal life, I love to travel, cook, watch movies, and
           discover new music!
         </p>
 

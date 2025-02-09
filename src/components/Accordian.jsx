@@ -26,7 +26,7 @@ function Accordian() {
         >
           <span className="hover:text-liquid-lava duration-500">
             {" "}
-            <strong>Full Stack Developer</strong> <em>(2023 - Present)</em>{" "}
+            <strong>Full Stack Developer</strong> <em>(2023 - 2024)</em>{" "}
           </span>
           <FaChevronCircleDown
             size={15}
@@ -48,24 +48,28 @@ function Accordian() {
           </h6>
           <br />
           <p className="text-left">
-            - Led the development and integration of a newsletter feature using Strapi CMS and NextJS, designing components and
-            creating comprehensive design documentation. Managed ticket workflows, processing over 2,500 email entries.
+            - Led the development and integration of a newsletter feature using
+            Strapi CMS and NextJS, designing components and creating
+            comprehensive design documentation. Managed ticket workflows,
+            processing over 2,500 email entries.
             <br />
             <br />
-            - Modernized ARCHIVE.pdf&apos;s front-end using React and NextJS, reducing page load times by 70% and improved user
-            retention by 20%, leading to increased accessibility and engagement
+            - Modernized ARCHIVE.pdf&apos;s front-end using React and NextJS,
+            reducing page load times by 60% and improved user retention by 20%,
+            leading to increased accessibility and engagement
             <br />
             <br />
-            - Introduced TypeScript, leveraging generics and interfaces to enhance code reliability and maintainability, reducing
-            errors and improving team productivity.
+            - Introduced TypeScript, leveraging generics and interfaces to
+            enhance code reliability and maintainability, reducing errors and
+            improving team productivity.
             <br />
             <br />
             - Participated in code QA reviews, ensuring the delivery of
             high-quality, error-free code.
             <br />
-            <br />
-            - Collaborated with design and content teams to ensure smooth handoff and integration of new features, improving
-            overall project efficiency and alignment between departments.
+            <br />- Collaborated with design and content teams to ensure smooth
+            handoff and integration of new features, improving overall project
+            efficiency and alignment between departments.
           </p>
         </div>
       </div>
@@ -81,7 +85,8 @@ function Accordian() {
         >
           <span className="hover:text-liquid-lava duration-500">
             {" "}
-            <strong>Web Developer & Assistant Manager</strong> <em>(2017 - Present)</em>{" "}
+            <strong>Web Developer & Assistant Manager</strong>{" "}
+            <em>(2017 - Present)</em>{" "}
           </span>
           <FaChevronCircleDown
             size={15}
@@ -103,37 +108,24 @@ function Accordian() {
           </h6>
           <br />
           <p className="text-left">
-            - Manage & maintain both{" "}
-            <a
-              className="underline hover:text-liquid-lava"
-              href="https://www.actionrentalstx.com/ "
-            >
-              Action Rentals
-            </a>{" "}
-            and{" "}
-            <a
-              className="underline hover:text-liquid-lava"
-              href="https://www.actionhosesupply.com/ "
-            >
-              Action Hose & Fittings
-            </a>{" "}
-            websites via Wordpress
+            - Maintain local business websites, ensuring current content and
+            optimal performance. Elevate search engine rankings and increase
+            website engagement by 14,000 total impressions and 715 unique
+            visitors through Google SiteKit
             <br />
             <br />
-            - Implemented user-focused design principles to enhance WordPress functionality, optimizing image loading
-            and streamlining navigation, which led to a 45% improvement in site load speed.
+            - Implemented user-focused design principles to enhance WordPress
+            functionality, optimizing image loading and streamlining navigation,
+            which led to a 30% improvement in site load speed.
             <br />
             <br />
-            - Directed the maintenance of the local business website, ensuring current content and optimal performance. Elevated
-            search engine rankings and increased website engagement metrics by 79% through strategic updates.
+            - Supervised the setup and maintenance of e-commerce platform,
+            utilizing WooCommerce for seamless transactions, resulting in a 15%
+            increase in average order value and a decrease in customer service
+            response time.
             <br />
-            <br />
-            - Supervised the setup and maintenance of e-commerce platform, utilizing WooCommerce for seamless transactions,
-            resulting in a 15% increase in average order value and a decrease in customer service response time.
-            <br />
-            <br />
-            - Performed regular website audits to identify areas for improvement and ensure compliance with the latest
-            web standards
+            <br />- Performed regular website audits to identify areas for
+            improvement and ensure compliance with the latest web standards
           </p>
         </div>
       </div>
@@ -171,8 +163,9 @@ function Accordian() {
           </h6>
           <br />
           <p className="text-left">
-            - Operated & Setup audio assets, including, but not limited to, lighting,
-            sound, communication equipment, and backline band equipment
+            - Operated & Setup audio assets, including, but not limited to,
+            lighting, sound, communication equipment, and backline band
+            equipment
             <br />
             <br />
             - Sets up and operated rotating stage operation for concerts and
