@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
-// import portrait from "/public/images/Portrait-BW.png";
-import headshot from "/public/images/headshot.png";
+import headshot from "/public/images/Headshot.png";
 import RotatingText from "@/components/rotating-text/RotatingText";
 import Cursor from "@/components/Cursor";
 import { useState } from "react";
