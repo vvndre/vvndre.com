@@ -14,6 +14,23 @@ function Footer() {
       </p>
       <div className="flex justify-center items-center space-x-1">
         <a
+          href="mailto:andrercastillon@gmail.com"
+          data-tooltip-target="tooltip-email"
+          className="inline-flex justify-center p-2 rounded-lg text-dusty-gray hover:text-liquid-lava duration-300 hover:bg-snow-white"
+        >
+          <svg
+            className="w-4 h-4"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+          <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"/>
+          <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"/>
+          </svg>
+          <span className="sr-only">Email</span>
+        </a>
+        <a
           href="https://www.linkedin.com/in/andre-castillon/"
           data-tooltip-target="tooltip-linkedin"
           className="inline-flex justify-center p-2 rounded-lg text-dusty-gray hover:text-liquid-lava duration-300 hover:bg-snow-white"
