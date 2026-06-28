@@ -19,12 +19,14 @@ export default function Home() {
       <section className="mx-auto flex min-h-[430px] max-w-6xl flex-col-reverse items-center gap-10 px-6 py-10 md:flex-row md:justify-between md:gap-0 md:py-8">
         {/* Left Content */}
         <div className="z-10 max-w-xl">
-          <h1 className="font-oswold font-bold text-4xl md:text-5xl">
+          <h1 className="text-4xl md:text-5xl">
+            <strong className="font-oswold">
             Front-end Engineer
             <br />
             bridging the gap
             <br />
             between <span className="text-liquid-lava">UX & code</span>
+            </strong>
           </h1>
 
           <div className="mt-10 flex items-center gap-6 md:justify-items-start">
@@ -66,8 +68,8 @@ export default function Home() {
               Featured:
             </p>
 
-            <h2 className="mt-4 font-oswold text-4xl font-bold md:text-5xl">
-              Aventura
+            <h2 className="mt-4 text-4xl md:text-5xl">
+              <strong className="font-oswold">Aventura</strong>
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed">
@@ -85,7 +87,10 @@ export default function Home() {
           </div>
 
           {/* Right Image */}
-          <div className="z-10 w-full max-w-[720px] md:translate-x-10 lg:translate-x-16">
+          <div 
+          className="z-10 w-full max-w-[720px] md:translate-x-10 lg:translate-x-16"
+          onMouseOver={() => setIsActive(true)}
+          onMouseLeave={() => setIsActive(false)}>
             <Image
               src={adventuraShowcase}
               alt="Aventura website mockup shown on mobile and desktop screens"
@@ -98,29 +103,32 @@ export default function Home() {
       </section>
 
       {/* 3rd Section - Selected Development Work */}
-      <section className="bg-dark-void z-10">
-        <div className="z-10 mx-auto max-w-6xl px-6 py-14 md:py-16">
+      <section className="bg-dark-void">
+        <div className="mx-auto max-w-6xl px-6 py-14 md:py-16">
           {/* Header Row */}
           <div className="mb-12 flex items-center justify-between gap-6">
-            <h2 className="font-oswold text-xl font-bold">
+            <h2 className="font-oswold z-10 text-xl font-bold">
               Selected Development Work
             </h2>
 
             <a
               href="/work"
-              className="font-dots text-2xl uppercase tracking-widest text-white transition hover:text-liquid-lava"
+              className="work-btn z-10 font-dots text-2xl uppercase tracking-widest text-white transition hover:text-liquid-lava"
             >
-              View All Work <span className="ml-3">→</span>
+              View All Work <span className="ml-2">→</span>
             </a>
           </div>
 
           {/* Project Grid */}
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 z-10">
+          <div 
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 z-10"
+          onMouseOver={() => setIsActive(true)}
+          onMouseLeave={() => setIsActive(false)}>
             {/* Card 1 */}
             <a
               href="https://www.archivepdf.net/"
               target="_blank"
-              className="overflow-hidden rounded-lg border border-white/40 bg-dark-void transition hover:-translate-y-1 hover:border-liquid-lava"
+              className="overflow-hidden z-10 rounded-lg border border-white/40 bg-dark-void transition hover:-translate-y-1 hover:border-liquid-lava"
             >
               <Image
                 src={apdf}
@@ -219,7 +227,7 @@ export default function Home() {
             <a
               href="https://icpdasusa.com/"
               target="_blank"
-              className="overflow-hidden rounded-lg border border-white/40 bg-dark-void transition hover:-translate-y-1 hover:border-liquid-lava"
+              className="overflow-hidden z-10 rounded-lg border border-white/40 bg-dark-void transition hover:-translate-y-1 hover:border-liquid-lava"
             >
               <Image
                 src={icpdasusa}
@@ -385,7 +393,7 @@ export default function Home() {
             <a
               href="https://gamejot-front-end.onrender.com/"
               target="_blank"
-              className="overflow-hidden rounded-lg border border-white/40 bg-dark-void transition hover:-translate-y-1 hover:border-liquid-lava"
+              className="overflow-hidden z-10 rounded-lg border border-white/40 bg-dark-void transition hover:-translate-y-1 hover:border-liquid-lava"
             >
               <Image
                 src={gamejot}
@@ -475,7 +483,7 @@ export default function Home() {
             <a
               href="https://wcct.org/"
               target="_blank"
-              className="overflow-hidden rounded-lg border border-white/40 bg-dark-void transition hover:-translate-y-1 hover:border-liquid-lava"
+              className="overflow-hidden z-10 rounded-lg border border-white/40 bg-dark-void transition hover:-translate-y-1 hover:border-liquid-lava"
             >
               <Image
                 src={wcct}
