@@ -48,7 +48,7 @@ export default function Work() {
       >
         <div className="group md:col-span-2 rounded-md relative w-full h-[65vh] overflow-hidden">
           <Link
-            href="https://beta.archivepdf.net/"
+            href="https://www.archivepdf.net/"
             className="block h-full w-full relative z-10"
             target="_blank"
           >
@@ -127,7 +127,7 @@ export default function Work() {
         {isSmallViewport && (
           <div className="group bg-slate-gray h-[45vh] rounded-md overflow-hidden relative">
             <Link
-              href="https://beta.archivepdf.net/"
+              href="https://www.archivepdf.net/"
               className="block h-full w-full relative"
               target="_blank"
             >

@@ -11,11 +11,9 @@ const RotatingText = () => {
           transform="translate(100,100)"
           fill="none"
         ></path>
-        <g fontSize="1.156rem">
+        <g fontSize="1.05rem">
           <text textAnchor="start">
-            <textPath href="#textPath" startOffset="0%">
-              - Andre Castillon - Web Developer - UX / UI Designer
-            </textPath>
+            <textPath href="#textPath" startOffset="0%">- Andre Castillon - Full Stack Developer - UX / UI Designer</textPath>
           </text>
         </g>
       </svg>
