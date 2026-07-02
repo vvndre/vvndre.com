@@ -1,34 +1,78 @@
 "use client";
+
 import HomeLogo from "../HomeLogo";
 import Link from "next/link";
 import { PiDotsNineBold } from "react-icons/pi";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { GiCancel } from "react-icons/gi";
-import "./navbar.css"
+import "./navbar.css";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showNav, setShowNav] = useState(true);
+
+  const lastScrollY = useRef(0);
+
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    // Keep nav visible if mobile menu is open
+    if (menuOpen) {
+      setShowNav(true);
+      return;
+    }
+
+    // Keep nav visible near the top
+    if (currentScrollY < 80) {
+      setShowNav(true);
+    } else if (currentScrollY > lastScrollY.current) {
+      // Scrolling down
+      setShowNav(false);
+    } else {
+      // Scrolling up
+      setShowNav(true);
+    }
+
+    lastScrollY.current = currentScrollY;
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, [menuOpen]);
+
   return (
-    <nav className="sticky w-full h-24 border-b border-solid border-snow-white bg-dark-void z-50">
+    <nav
+      className={`sticky top-0 w-full h-24 border-b border-solid border-snow-white bg-dark-void z-50 transition-transform duration-300 ease-in-out ${
+        showNav ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="flex flex-row justify-between items-center h-full w-full px-6 lg:px-12">
         <HomeLogo />
+
         <div className="font-dots text-3xl hidden sm:flex">
           <ul className="hidden sm:flex">
             <Link href="/">
-              <li className="ml-10 link ">[ Home ]</li>
+              <li className="ml-10 link">[ Home ]</li>
             </Link>
+
             <Link href="/work">
-              <li className="ml-10 link ">[ Work ]</li>
+              <li className="ml-10 link">[ Work ]</li>
             </Link>
+
             <Link href="/about">
-              <li className="ml-10 link ">[ About ]</li>
+              <li className="ml-10 link">[ About ]</li>
             </Link>
           </ul>
         </div>
+
         <div onClick={handleNav} className="sm:hidden">
           <PiDotsNineBold
             size={35}
@@ -36,6 +80,7 @@ function NavBar() {
           />
         </div>
       </div>
+
       <div
         className={
           menuOpen
@@ -51,6 +96,7 @@ function NavBar() {
             />
           </div>
         </div>
+
         <div className="flex-col py-4 z-50">
           <ul className="font-dots text-5xl">
             <Link href="/">
@@ -61,6 +107,7 @@ function NavBar() {
                 [ Home ]
               </li>
             </Link>
+
             <Link href="/work">
               <li
                 onClick={() => setMenuOpen(false)}
@@ -69,6 +116,7 @@ function NavBar() {
                 [ Work ]
               </li>
             </Link>
+
             <Link href="/about">
               <li
                 onClick={() => setMenuOpen(false)}
