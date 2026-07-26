@@ -13,7 +13,7 @@ const RippleButton = () => {
         <span></span>
       </span>
       <span className="btn-title">
-        <span data-text="Resume">Resume</span>
+        <span data-text="View My Resume">View My Resume</span>
       </span>
     </Link>
   );
