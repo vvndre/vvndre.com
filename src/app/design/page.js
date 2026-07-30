@@ -7,8 +7,6 @@ import { FiSearch, FiEdit3, FiArrowRight } from "react-icons/fi";
 import { LuFlaskConical } from "react-icons/lu";
 import Cursor from "@/components/Cursor";
 import RippleButton from "@/components/ripple-button/RippleButton";
-
-// Update these paths to match your actual filenames
 import aventuraShowcase from "/public/images/aventura-showcase.png";
 import aventura from "/public/images/aventura-showcase.png";
 import icpdasusa from "/public/images/websites/ICPDASUSA.png";
@@ -57,9 +55,7 @@ export default function Design() {
 
   return (
     <div className="mx-auto flex min-h-screen flex-col bg-dark-void px-6">
-      {/* =========================================================
-          HERO
-      ========================================================== */}
+      {/* HERO */}
       <section className="flex w-full flex-col items-center gap-12 px-4 py-14 md:px-10 md:py-16 lg:flex-row lg:justify-between">
         {/* Left Content */}
         <div className="z-10 lg:max-w-md">
@@ -98,9 +94,7 @@ export default function Design() {
         </div>
       </section>
 
-      {/* =========================================================
-          FEATURED UX CASE STUDY
-      ========================================================== */}
+      {/* FEATURED UX CASE STUDY */}
       <section
         className="z-10 px-4 pb-14"
         onMouseOver={() => setIsActive(true)}
@@ -162,9 +156,7 @@ export default function Design() {
         </Link>
       </section>
 
-      {/* =========================================================
-          SELECTED UX WORK
-      ========================================================== */}
+      {/* SELECTED UX WORK */}
       <section
         className="z-10 px-4 pb-14"
         onMouseOver={() => setIsActive(true)}
@@ -176,6 +168,7 @@ export default function Design() {
 
         <Link
           href="https://icpdasusa.com/"
+          target="_blank"
           className="group flex flex-col gap-8 rounded-md border border-white/60 bg-slate-gray px-6 py-8 transition hover:border-liquid-lava md:flex-row md:items-center md:px-10 lg:px-20"
         >
           {/* Image */}
@@ -217,9 +210,7 @@ export default function Design() {
         </Link>
       </section>
 
-      {/* =========================================================
-          DESIGN PROCESS
-      ========================================================== */}
+      {/* DESIGN PROCESS */}
       <section className="z-10 px-4 pb-16">
         <h2 className="mb-10 font-oswold text-xl font-bold text-white">
           Design Process
