@@ -4,7 +4,7 @@ import headshot from "/public/images/Headshot.png";
 import RotatingText from "@/components/rotating-text/RotatingText";
 import Cursor from "@/components/Cursor";
 import { useState } from "react";
-import adventuraShowcase from "/public/images/aventura-showcase.png";
+import aventuraShowcase from "/public/images/aventura-showcase.png";
 import apdf from "/public/images/websites/archivePDF.png";
 import gamejot from "/public/images/websites/Gamejot.jpeg";
 import icpdasusa from "/public/images/websites/ICPDASUSA.png";
@@ -93,7 +93,7 @@ export default function Home() {
             onMouseLeave={() => setIsActive(false)}
           >
             <Image
-              src={adventuraShowcase}
+              src={aventuraShowcase}
               alt="Aventura website mockup shown on mobile and desktop screens"
               quality={100}
               priority

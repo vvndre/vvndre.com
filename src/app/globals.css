@@ -94,3 +94,7 @@ body {
 .work-btn:hover::before {
   width: 100%;
 }
+
+li::marker {
+  color: #f56e0f;
+}

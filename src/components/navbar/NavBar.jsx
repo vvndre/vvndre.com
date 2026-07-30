@@ -84,7 +84,7 @@ function NavBar() {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gluon-gray p-10 ease-in duration-500 z-50"
+            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gluon-gray p-10 border-r border-white ease-in duration-500 z-50"
             : "fixed left-[-100%] top-0 p-10 ease-out duration-500 z-50"
         }
       >
