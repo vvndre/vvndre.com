@@ -59,12 +59,13 @@ function NavBar() {
 
         <div className="font-dots text-3xl hidden sm:flex">
           <ul className="hidden sm:flex">
-            <Link href="/">
-              <li className="ml-10 link">[ Home ]</li>
-            </Link>
 
             <Link href="/work">
               <li className="ml-10 link">[ Work ]</li>
+            </Link>
+
+            <Link href="/design">
+              <li className="ml-10 link">[ Design ]</li>
             </Link>
 
             <Link href="/about">
@@ -99,14 +100,6 @@ function NavBar() {
 
         <div className="flex-col py-4 z-50">
           <ul className="font-dots text-5xl">
-            <Link href="/">
-              <li
-                onClick={() => setMenuOpen(false)}
-                className="my-14 cursor-cell link"
-              >
-                [ Home ]
-              </li>
-            </Link>
 
             <Link href="/work">
               <li
@@ -114,6 +107,15 @@ function NavBar() {
                 className="my-14 cursor-cell link"
               >
                 [ Work ]
+              </li>
+            </Link>
+
+            <Link href="/design">
+              <li
+                onClick={() => setMenuOpen(false)}
+                className="my-14 cursor-cell link"
+              >
+                [ Design ]
               </li>
             </Link>
 
