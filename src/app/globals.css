@@ -57,6 +57,30 @@ body {
   background: #f56e0f;
 }
 
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151419;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #151419;
+  border-radius: 999px;
+  cursor: cell;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F56E0F;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: #F56E0F #151419;
+}
+
 .work-btn {
   background-image: linear-gradient(
     to right,
