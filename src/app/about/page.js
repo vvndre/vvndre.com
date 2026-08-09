@@ -101,7 +101,7 @@ export default function About() {
             </strong>
           </h2>
 
-          <p className="mt-6 text-md leading-relaxed text-dusty-gray">
+          <p className="mt-6 leading-relaxed text-white/80">
             I’m Andre Castillon, a full-stack developer with a UX design mindset. 
             I create websites, interfaces, and digital systems that are functional, accessible, and easy to use.
           </p>

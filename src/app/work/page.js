@@ -112,7 +112,7 @@ export default function Work() {
 
                 <p className="mt-2 text-sm text-dusty-gray">2025 - Present</p>
 
-                <p className="mt-4 text-sm md:text-base leading-relaxed">
+                <p className="mt-6 leading-relaxed text-white/80">
                   Developing and maintaining enterprise websites, product pages,
                   and internal systems using PHP, WordPress, Javascript, MySQL.
                   Conducting UX research and usability testing to drive

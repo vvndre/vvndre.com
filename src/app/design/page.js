@@ -71,7 +71,7 @@ export default function Design() {
             </strong>
           </h1>
 
-          <p className="mt-6 text-sm leading-relaxed text-dusty-gray md:text-base">
+          <p className="mt-6 leading-relaxed text-white/80">
             I approach UX through research, usability, accessibility, and
             thoughtful interface design, turning user needs into clear digital
             experiences from early concepts to polished prototypes.
