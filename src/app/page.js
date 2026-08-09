@@ -78,7 +78,7 @@ export default function Home() {
 
             <div className="mt-10 flex items-center gap-6 md:justify-items-start">
               <a
-                href="/work"
+                href="/design/aventura"
                 className="work-btn font-dots text-3xl uppercase tracking-widest border-t border-solid transition"
               >
                 View Case Study <span className="ml-6">→</span>
