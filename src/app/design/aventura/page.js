@@ -249,16 +249,16 @@ function PersonaCard({ image, name, type, quote, goals, frustrations }) {
 function JourneyRow({ journey }) {
   return (
     <article className="overflow-hidden rounded-md border border-white/60 bg-dark-void/30">
-      <div className="grid min-w-0 gap-4 p-4 md:p-5 xl:grid-cols-[120px_minmax(0,1fr)]">
+      <div className="grid min-w-0 gap-5 p-4 md:p-5 xl:grid-cols-[120px_minmax(0,1fr)]">
         {/* Persona */}
         <div className="flex items-center gap-4 xl:flex-col xl:justify-center xl:gap-2 xl:text-center">
-          <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-full border border-white">
+          <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full border border-white sm:h-28 sm:w-28 xl:h-32 xl:w-32">
             <Image
               src={journey.image}
               alt={`${journey.name} persona`}
               fill
               quality={100}
-              sizes="80px"
+              sizes="128px"
               className="object-cover object-top"
             />
           </div>
@@ -276,67 +276,71 @@ function JourneyRow({ journey }) {
 
         {/* Journey Content */}
         <div className="min-w-0">
-          {/* <p className="mb-4 leading-relaxed text-white/70">
-            {journey.summary}
-          </p> */}
+          <div
+            className="
+              grid
+              grid-cols-1
+              gap-3
 
-          {/* Desktop/tablet grid, horizontal scrolling on small screens */}
-          <div className="-mx-1 overflow-x-auto px-1 pb-2">
-            <div className="grid min-w-[850px] grid-cols-5 gap-1.5 xl:min-w-0">
-              {journey.steps.map(
-                ({ number, title, findings, opportunity, icon: Icon }) => (
-                  <article
-                    key={`${journey.name}-${number}`}
-                    className="flex min-h-[190px] min-w-0 flex-col rounded-md border border-white/50 bg-slate-gray px-3 py-2.5"
-                  >
-                    {/* Step Header */}
-                    <div className="flex items-start justify-between gap-2">
-                      <p className="font-dots text-xl text-liquid-lava">
-                        {number}
-                      </p>
+              md:grid-cols-2
 
-                      <Icon className="h-5 w-5 shrink-0 text-liquid-lava" />
+              xl:grid-cols-5
+              xl:gap-1.5
+            "
+          >
+            {journey.steps.map(
+              ({ number, title, findings, opportunity, icon: Icon }) => (
+                <article
+                  key={`${journey.name}-${number}`}
+                  className="flex min-w-0 flex-col rounded-md border border-white/50 bg-slate-gray px-4 py-4 xl:min-h-[190px] xl:px-3 xl:py-2.5"
+                >
+                  {/* Step Header */}
+                  <div className="flex items-start justify-between gap-2">
+                    <p className="font-dots text-2xl text-liquid-lava">
+                      {number}
+                    </p>
+
+                    <Icon className="h-5 w-5 shrink-0 text-liquid-lava" />
+                  </div>
+
+                  {/* Step Title */}
+                  <h5 className="mt-2 font-oswald text-lg text-white xl:min-h-[42px]">
+                    {title}
+                  </h5>
+
+                  {/* Feeling */}
+                  <div className="mt-3 border-t border-white/15 pt-3">
+                    <p className="font-oswald uppercase tracking-wider text-dusty-gray">
+                      Feeling
+                    </p>
+
+                    <div className="mt-2 flex flex-wrap gap-1.5 xl:block xl:space-y-1">
+                      {findings.map((finding) => (
+                        <div
+                          key={finding}
+                          className="rounded-md border border-white/40 px-2 py-1"
+                        >
+                          <p className="font-oswald leading-none text-white/85">
+                            {finding}
+                          </p>
+                        </div>
+                      ))}
                     </div>
+                  </div>
 
-                    {/* Step Title */}
-                    <h5 className="mt-2 text-lg min-h-[42px] font-oswald text-white">
-                      {title}
-                    </h5>
+                  {/* Opportunity */}
+                  <div className="mt-3">
+                    <p className="font-oswald uppercase tracking-wider text-dusty-gray">
+                      Opportunity
+                    </p>
 
-                    {/* Finding */}
-                    <div className="mt-2 border-white/25 pt-2">
-                      <p className="font-oswald uppercase tracking-wider text-dusty-gray">
-                        Feeling
-                      </p>
-
-                      <div className="mt-1 space-y-1">
-                        {findings.map((finding) => (
-                          <div
-                            key={finding}
-                            className="rounded-md border border-white/40 px-2 py-1"
-                          >
-                            <p className="font-oswald leading-none text-white/85">
-                              {finding}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Opportunity */}
-                    <div className="mt-2">
-                      <p className="font-oswald uppercase tracking-wider text-dusty-gray">
-                        Opportunity
-                      </p>
-
-                      <p className="mt-1 text-sm leading-snug text-white/85">
-                        {opportunity}
-                      </p>
-                    </div>
-                  </article>
-                ),
-              )}
-            </div>
+                    <p className="mt-1 text-sm leading-snug text-white/85">
+                      {opportunity}
+                    </p>
+                  </div>
+                </article>
+              ),
+            )}
           </div>
         </div>
       </div>
