@@ -5,7 +5,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import Image from "next/image";
 
-import image3 from "/public/images/chillmaxxing.JPG";
+import image3 from "/public/images/comicsandmanga.jpg";
 import image2 from "/public/images/gamesandpizza.jpg";
 import image1 from "/public/images/matchalover.JPG";
 
