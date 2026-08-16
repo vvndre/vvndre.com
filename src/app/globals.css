@@ -48,13 +48,15 @@ body {
 }
 
 ::-moz-selection {
-  background: #f56e0f;
+  background: rgba(245, 110, 15, 0.5);
 }
+
 ::-webkit-selection {
-  background: #f56e0f;
+  background: rgba(245, 110, 15, 0.5);
 }
+
 ::selection {
-  background: #f56e0f;
+  background: rgba(245, 110, 15, 0.5);
 }
 
 /* Chrome, Edge, Safari */
