@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import headshot from "/public/images/Headshot.png";
-import RotatingText from "@/components/rotating-text/RotatingText";
+import backgroundImage from "/public/images/pexels-eberhardgross-1183021.jpg";
+import AnimatedRole from "@/components/AnimatedRole";
+import Link from "next/link";
 import Cursor from "@/components/Cursor";
 import { useState } from "react";
 import aventuraShowcase from "/public/images/aventura-showcase.png";
@@ -15,97 +17,228 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-dark-void text-white">
-      {/* 1st Section */}
-      <section className="mx-auto flex min-h-[430px] max-w-6xl flex-col-reverse items-center gap-10 px-6 py-10 md:flex-row md:justify-between md:gap-0 md:py-8">
+      {/* 1st Section - Hero */}
+      <section className="relative flex min-h-[calc(100svh-6rem)] w-full flex-col items-center justify-center gap-10 overflow-hidden px-8 py-14 sm:px-10 md:gap-12 md:px-10 md:py-16 lg:flex-row lg:justify-between lg:gap-10 xl:gap-16">
+        {/* Background Image */}
+        <Image
+          src={backgroundImage}
+          alt="Background image for vvndre.com homepage"
+          fill
+          priority
+          quality={100}
+          className="absolute inset-0 -z-0 object-cover object-center"
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 z-[1] bg-dark-void/70" />
+
+        {/* Bottom Fade */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-32 bg-gradient-to-b from-transparent via-dark-void/60 to-dark-void md:h-40" />
+
         {/* Left Content */}
-        <div className="z-10 max-w-xl">
-          <h1 className="text-4xl md:text-5xl">
+        <div
+          className="
+      relative
+      z-10
+      w-full
+      max-w-[650px]
+      text-left
+      md:mx-auto
+      md:text-center
+      lg:mx-0
+      lg:w-[48%]
+      lg:max-w-[560px]
+      lg:text-left
+      xl:max-w-[640px]
+    "
+        >
+          <p className="font-dots text-2xl uppercase tracking-widest text-liquid-lava">
+            Andre Castillon
+          </p>
+
+          <h1
+            className="
+        mt-4
+        text-5xl
+        leading-[0.98]
+        md:text-6xl
+        lg:text-5xl
+        xl:text-6xl
+        2xl:text-7xl
+      "
+          >
             <strong className="font-oswold">
-              Front-end Engineer
-              <br />
-              bridging the gap
-              <br />
-              between <span className="text-liquid-lava">UX & code</span>
+              <AnimatedRole />
+              
+              <span className="block sm:inline">bridging the gap</span>{" "}
+              <span className="block sm:inline">
+                between <span className="text-liquid-lava">UX & code</span>
+              </span>
+              <br className="hidden lg:block" />
             </strong>
           </h1>
 
-          <div className="mt-10 flex items-center gap-6 md:justify-items-start">
+          {/* Tags */}
+          <div
+            className="
+        mt-6
+        flex
+        flex-wrap
+        justify-start
+        gap-x-4
+        gap-y-2
+        md:justify-center
+        lg:justify-start
+      "
+          >
+            {["Front-end Engineer", "Full Stack Developer", "UX/UI"].map(
+              (tag) => (
+                <span key={tag} className="font-lora text-sm text-white/80">
+                  <span className="text-liquid-lava">[</span> {tag}{" "}
+                  <span className="text-liquid-lava">]</span>
+                </span>
+              ),
+            )}
+          </div>
+
+          {/* CTA */}
+          <div
+            className="
+        mt-8
+        flex
+        justify-start
+        md:justify-center
+        lg:mt-10
+        lg:justify-start
+      "
+          >
             <a
               href="/work"
-              className="work-btn font-dots text-4xl uppercase tracking-widest border-t border-solid text-white transition hover:text-orange-500"
+              className="
+          work-btn
+          border-t
+          border-solid
+          font-dots
+          text-3xl
+          uppercase
+          tracking-widest
+          text-white
+          transition
+          hover:text-orange-500
+          xl:text-4xl
+        "
             >
-              View my work <span className="ml-6">→</span>
+              View my work
+              <span className="ml-4 sm:ml-6">→</span>
             </a>
           </div>
         </div>
 
         {/* Right Image */}
         <div
+          className="
+      relative
+      z-10
+      flex
+      w-full
+      justify-center
+      md:justify-center
+      lg:w-[46%]
+      lg:justify-end
+    "
           onMouseOver={() => setIsActive(true)}
           onMouseLeave={() => setIsActive(false)}
-          className="relative z-10"
         >
-          <Image
-            src={headshot}
-            width={350}
-            height={350}
-            alt="Picture of Andre Castillon"
-            quality={100}
-            priority
-            className="rounded-full"
-          />
-
-          <RotatingText />
-        </div>
-      </section>
-
-      {/* 2nd Section - Featured Case Study */}
-      <section className="bg-slate-gray">
-        <div className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-10 px-6 py-14 md:flex-row md:justify-between md:py-16">
-          {/* Left Content */}
-          <div className="z-10 max-w-sm">
-            <p className="font-dots text-2xl uppercase tracking-widest text-dusty-gray">
-              Featured:
-            </p>
-
-            <h2 className="mt-4 text-4xl md:text-5xl">
-              <strong className="font-oswold">Aventura</strong>
-            </h2>
-
-            <p className="mt-6 text-lg leading-relaxed">
-              Designing an outdoor commerce experience for every explorer.
-            </p>
-
-            <div className="mt-10 flex items-center gap-6 md:justify-items-start">
-              <a
-                href="/design/aventura"
-                className="work-btn font-dots text-3xl uppercase tracking-widest border-t border-solid transition"
-              >
-                View Case Study <span className="ml-6">→</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Right Image */}
           <div
-            className="z-10 w-full max-w-[720px] md:translate-x-10 lg:translate-x-16"
-            onMouseOver={() => setIsActive(true)}
-            onMouseLeave={() => setIsActive(false)}
+            className="
+        w-full
+        max-w-[430px]
+        sm:w-[90%]
+        sm:max-w-[460px]
+        md:w-[55%]
+        md:max-w-[460px]
+        lg:w-full
+        lg:max-w-[430px]
+        xl:max-w-[500px]
+        2xl:max-w-[540px]
+      "
           >
             <Image
-              src={aventuraShowcase}
-              alt="Aventura website mockup shown on mobile and desktop screens"
+              src={headshot}
+              alt="Andre Castillon"
               quality={100}
               priority
-              className="h-auto w-full"
+              className="h-auto w-full rounded-full"
             />
           </div>
         </div>
       </section>
 
+      {/* 2nd Section - Featured */}
+      <section
+        className="relative z-10 px-6 pb-10"
+        onMouseOver={() => setIsActive(true)}
+        onMouseLeave={() => setIsActive(false)}
+      >
+        <h2 className="relative z-10 mb-10 font-oswold text-xl font-bold text-white">
+          Featured UX Case Study
+        </h2>
+
+        <Link
+          href="/design/aventura"
+          className="group relative z-10 flex flex-col gap-8 rounded-md border border-white/60 bg-slate-gray px-6 py-8 transition hover:border-liquid-lava md:flex-row md:items-center md:px-10 lg:px-20"
+        >
+          {/* Image */}
+          <div className="relative w-full overflow-hidden rounded-md md:w-[42%]">
+            <Image
+              src={aventuraShowcase}
+              alt="Aventura outdoor e-commerce website"
+              quality={100}
+              className="h-auto w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="w-full md:ml-auto md:w-[48%]">
+            <p className="font-oswald text-md uppercase text-liquid-lava">
+              Featured
+            </p>
+
+            <h3 className="mt-2 font-oswold text-3xl font-bold uppercase">
+              Aventura
+            </h3>
+
+            <p className="mt-3 font-oswold text-lg">
+              UX/UI Designer - Google UX Design Project
+            </p>
+
+            <p className="mt-4 text-sm leading-relaxed text-white/80 md:text-base">
+              Designing an outdoor commerce experience for every explorer.
+              Aventura reimagines how users discover and shop for outdoor gear
+              through an intuitive, accessible experience built for both
+              first-time buyers and seasoned adventurers.
+            </p>
+
+            {/* Keywords */}
+            <div className="mt-6 border-t border-white/20 pt-4">
+              <p className="text-xs leading-relaxed text-dusty-gray md:text-sm">
+                UX Research · Wireframing · Prototyping · Usability Testing
+              </p>
+            </div>
+
+            {/* CTA */}
+            <div className="mt-6">
+              <span className="font-dots text-2xl uppercase tracking-wider text-snow-white transition group-hover:text-liquid-lava">
+                [ View Case Study <span className="ml-1">→</span> ]
+              </span>
+            </div>
+          </div>
+        </Link>
+      </section>
+
       {/* 3rd Section - Selected Development Work */}
       <section className="bg-dark-void">
-        <div className="mx-auto max-w-6xl px-6 py-14 md:py-16">
+        <div className="mx-auto px-6 py-10">
           {/* Header Row */}
           <div className="mb-10 flex items-center justify-between gap-6">
             <h2 className="font-oswold z-10 text-xl font-bold">

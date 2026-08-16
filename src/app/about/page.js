@@ -107,7 +107,7 @@ export default function About() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
-            {["Houston, TX", "Full-Stack Developer", "UX/UI"].map((tag) => (
+            {["Houston, TX", "Full Stack Developer", "UX/UI"].map((tag) => (
               <span
                 key={tag}
                 className="font-lora text-sm text-white/80"
@@ -153,7 +153,7 @@ export default function About() {
                 Development really started for me at Action Rentals, where I
                 used WordPress builders to update, maintain, and fix a legacy
                 website. In 2023, I joined Austin Coding Academy and gained a
-                stronger foundation in full-stack programming — front-end,
+                stronger foundation in full-stack programming - front-end,
                 back-end, JavaScript, SQL, and how web applications come
                 together.
               </p>
