@@ -72,7 +72,7 @@ export default function Home() {
               
               <span className="block sm:inline">bridging the gap</span>{" "}
               <span className="block sm:inline">
-                between <span className="text-liquid-lava">UX & code</span>
+                between <span className="text-liquid-lava">UX & code.</span>
               </span>
               <br className="hidden lg:block" />
             </strong>
