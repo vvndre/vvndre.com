@@ -59,9 +59,9 @@ export default function Home() {
           <h1
             className="
         mt-4
-        text-5xl
+        text-4xl
         leading-[0.98]
-        md:text-6xl
+        md:text-4xl
         lg:text-5xl
         xl:text-6xl
         2xl:text-7xl
