@@ -7,8 +7,34 @@ import { dots, oswald, lora } from "./utils/fonts";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "vvndre",
-  description: "Portfolio for Andre Castillon",
+  title: "Andre Castillon | vvndre.com",
+  description:
+    "Front-end Engineer bridging the gap between UX and code.",
+
+  openGraph: {
+    title: "Andre Castillon | Front-end Engineer & UX/UI Designer",
+    description:
+      "Front-end Engineer bridging the gap between UX and code.",
+    url: "https://vvndre.com",
+    siteName: "Andre Castillon",
+    images: [
+      {
+        url: "/images/og/andre-portfolio-v2.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Andre Castillon portfolio",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Andre Castillon | Front-end Engineer & UX/UI Designer",
+    description:
+      "Front-end Engineer bridging the gap between UX and code.",
+    images: ["/images/og/andre-portfolio-v2.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
