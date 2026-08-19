@@ -11,6 +11,7 @@ import apdf from "/public/images/websites/archivePDF.png";
 import gamejot from "/public/images/websites/Gamejot.jpeg";
 import icpdasusa from "/public/images/websites/ICPDASUSA.png";
 import wcct from "/public/images/websites/wcct.jpeg";
+import RippleButton from "@/components/ripple-button/RippleButton";
 
 export default function Home() {
   const [isActive, setIsActive] = useState(false);
@@ -770,6 +771,11 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </section>
+
+      {/* Resume CTA */}
+      <section className="z-10 flex justify-center px-4 pb-16">
+        <RippleButton />
       </section>
 
       <Cursor isActive={isActive} />

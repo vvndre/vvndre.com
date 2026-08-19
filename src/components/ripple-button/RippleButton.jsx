@@ -6,7 +6,7 @@ const RippleButton = () => {
     <Link
       target="_blank"
       className="btn"
-      href="https://docs.google.com/document/d/1sJbuhwyyo0p2P4GNqTjXYrYzRpys7D9kP8Q988KVZmY/edit?usp=sharing"
+      href="https://docs.google.com/document/d/1MvIORSwGGP8cucxzGrZaN3VwD9ClvBF-n5gEcIOx7DE/edit?usp=sharing"
     >
       <span className="btn-border"></span>
       <span className="btn-ripple">

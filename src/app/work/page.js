@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import apdfmock from "/public/images/websites/apdf-mockup.png";
+import RippleButton from "@/components/ripple-button/RippleButton";
 import workShowcase from "/public/images/work-showcase.png";
 import apdf from "/public/images/websites/archivePDF.png";
 import icpdasusa from "/public/images/websites/ICPDASUSA.png";
@@ -1127,6 +1127,11 @@ export default function Work() {
                 </div>
               </div>
             </section>
+
+            {/* Resume CTA */}
+      <section className="z-10 flex justify-center px-4 pb-16">
+        <RippleButton />
+      </section>
 
       <Cursor isActive={isActive} />
     </div>
