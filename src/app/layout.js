@@ -7,6 +7,7 @@ import { dots, oswald, lora } from "./utils/fonts";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL("https://vvndre.com"),
   title: "Andre Castillon | vvndre.com",
   description:
     "Front-end Engineer bridging the gap between UX and code.",
